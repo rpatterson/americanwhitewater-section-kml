@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         American Whitewater section/run map KML link fix
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.2
 // @description  Fix the river section/run KML links to return useful KML containing all the points that appear on the map tab.  Useful for downloading the rapid locations with an image if available into external apps such as Google Earth, Locus Map, etc.
 // @author       rpatterson
 // @match        https://www.americanwhitewater.org/content/River/detail/id/*
@@ -63,7 +63,7 @@
 
   // Add a KML link with a data URL for download
   kml_link.setAttribute(
-    'href', 'data:application/octet-stream;charset=utf-8,' +
+    'href', 'data:application/vnd.google-earth.kml+xml;charset=utf-8,' +
       encodeURIComponent(`<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
