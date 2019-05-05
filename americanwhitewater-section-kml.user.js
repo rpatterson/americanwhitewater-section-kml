@@ -3,6 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  Fix the river section/run KML links to return useful KML containing all the points that appear on the map tab.  Useful for downloading the rapid locations with an image if available into external apps such as Google Earth, Locus Map, etc.
+// @license GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // @author       rpatterson
 // @match        https://www.americanwhitewater.org/content/River/detail/id/*
 // @grant        none
